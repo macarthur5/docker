@@ -34,15 +34,15 @@ exit
 
 ---
 
-## Rebuild after changing the Dockerfile
+## Rebuild after changing the Dockerfile or for the first time
 
-### 1. Rebuild the image
+### 1. Rebuild the image/Build the image
 
 ```bash
 docker build -t ubuntu-dev .
 ```
 
-### 2. Remove the old container
+### 2. Remove the old container (Not needed if running for the first time)
 
 ```bash
 docker rm -f ubuntu-dev
